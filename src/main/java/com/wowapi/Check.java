@@ -44,6 +44,7 @@ public class Check {
 				new Player ("Verestrasz", "lightnings-blade", "eu"),
 				new Player ("Lappe", "lightnings-blade", "eu"),
 				new Player ("Alzu", "lightnings-blade", "eu"),
+				new Player ("Seita", "lightnings-blade", "eu"),
 				new Player ("Riksu", "lightnings-blade", "eu"),
 				new Player ("Devai", "lightnings-blade", "eu"),
 				new Player ("Luumu", "lightnings-blade", "eu"),
@@ -113,6 +114,32 @@ public class Check {
 				new Player ("Loregasm", "barthilas", "us"),
 				new Player ("Anthrall", "barthilas", "us"),
 				new Player ("Xariaz", "barthilas", "us")
+				));
+		
+		playerList.put("Midwinter", Arrays.asList(
+				new Player ("Dashima", "sargeras", "us"),
+				new Player ("Exoticflower", "sargeras", "us"),
+				new Player ("Kevsenior", "sargeras", "us"),
+				new Player ("Angz", "sargeras", "us"),
+				new Player ("Vigilate", "sargeras", "us"),
+				new Player ("Doxie", "sargeras", "us"),
+				new Player ("Slootbag", "sargeras", "us"),
+				new Player ("Jarinky", "sargeras", "us"),
+				new Player ("Stenhaldi", "sargeras", "us"),
+				new Player ("Hesp", "sargeras", "us")
+				));
+		
+		playerList.put("Ascendance", Arrays.asList(
+				new Player ("Sennari", "draenor", "eu"),
+				new Player ("Stash", "draenor", "eu"),
+				new Player ("Orby", "draenor", "eu"),
+				new Player ("Cherdin", "draenor", "eu"),
+				new Player ("Rammo", "draenor", "eu"),
+				new Player ("Eriya", "draenor", "eu"),
+				new Player ("Rammoz", "draenor", "eu"),
+				new Player ("Derwinn", "draenor", "eu"),
+				new Player ("Pipex", "draenor", "eu"),
+				new Player ("Camthalion", "draenor", "eu")
 				));
 	}
 
