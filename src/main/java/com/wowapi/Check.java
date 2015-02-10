@@ -202,12 +202,12 @@ public class Check {
 						List<PlayerAchievement> achives = getPlayerAchievements(player);				
 						for (Long bossId: achievementList.keySet()) {					
 							achives.stream().filter(c -> c.getAchievementId().equals(bossId)).findAny().ifPresent(						
-									a -> logger.info(String.format("%s of \"%s\" has achieved \"%s(%d)\" at %s",
-											player,
+									a -> logger.info(String.format("\"%s\" has achieved \"%s(%d)\" at %s, player: %s",											
 											guildName,
 											achievementList.get(bossId),
 											bossId,
-											a.getUTCtime()))
+											a.getUTCtime(),
+											player))
 									);
 						}	
 					}
