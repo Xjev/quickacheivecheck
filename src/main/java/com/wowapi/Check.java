@@ -124,6 +124,11 @@ public class Check {
 				));
 
 		playerList.put("Midwinter", Arrays.asList(
+				new Player ("Stenhaldi", "sargeras", "us"),
+				new Player ("Kennyloggins", "sargeras", "us"),
+				new Player ("Thebiggman", "sargeras", "us"),
+				new Player ("Affinity", "sargeras", "us"),
+				new Player ("Siory", "sargeras", "us"),	
 				new Player ("Dashima", "sargeras", "us"),
 				new Player ("Exoticflower", "sargeras", "us"),
 				new Player ("Kevsenior", "sargeras", "us"),
@@ -131,8 +136,7 @@ public class Check {
 				new Player ("Vigilate", "sargeras", "us"),
 				new Player ("Doxie", "sargeras", "us"),
 				new Player ("Slootbag", "sargeras", "us"),
-				new Player ("Jarinky", "sargeras", "us"),
-				new Player ("Stenhaldi", "sargeras", "us"),
+				new Player ("Jarinky", "sargeras", "us"),			
 				new Player ("Hesp", "sargeras", "us")
 				));
 
