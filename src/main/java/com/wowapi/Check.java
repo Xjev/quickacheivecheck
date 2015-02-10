@@ -40,33 +40,38 @@ public class Check {
 
 	public Check () {
 
-				playerList.put("Paragon", Arrays.asList(
-						new Player ("Verestrasz", "lightnings-blade", "eu"),
-						new Player ("Lappe", "lightnings-blade", "eu"),
-						new Player ("Alzu", "lightnings-blade", "eu"),
-						new Player ("Seita", "lightnings-blade", "eu"),
-						new Player ("Riksu", "lightnings-blade", "eu"),
-						new Player ("Devai", "lightnings-blade", "eu"),
-						new Player ("Luumu", "lightnings-blade", "eu"),
-						new Player ("Zelliiz", "lightnings-blade", "eu"),
-						new Player ("Verdishamonk", "lightnings-blade", "eu"),
-						new Player ("Fraggoji", "lightnings-blade", "eu"),
-						new Player ("Seijta", "lightnings-blade", "eu")
-						));
-		
-				playerList.put("Method", Arrays.asList(
-						new Player ("Sco", "twisting-nether", "eu"),
-						new Player ("Kreps", "twisting-nether", "eu"),
-						new Player ("Raziee", "twisting-nether", "eu"),
-						new Player ("Drquyn", "twisting-nether", "eu"),
-						new Player ("Perfecto", "twisting-nether", "eu"),
-						new Player ("Smootie", "twisting-nether", "eu"),
-						new Player ("Twold", "twisting-nether", "eu"),
-						new Player ("Rogerbrown", "twisting-nether", "eu"),
-						new Player ("Apko", "twisting-nether", "eu")
-						));
+		//		playerList.put("Paragon", Arrays.asList(
+		//				new Player ("Verestrasz", "lightnings-blade", "eu"),
+		//				new Player ("Lappe", "lightnings-blade", "eu"),
+		//				new Player ("Alzu", "lightnings-blade", "eu"),
+		//				new Player ("Seita", "lightnings-blade", "eu"),
+		//				new Player ("Riksu", "lightnings-blade", "eu"),
+		//				new Player ("Devai", "lightnings-blade", "eu"),
+		//				new Player ("Luumu", "lightnings-blade", "eu"),
+		//				new Player ("Zelliiz", "lightnings-blade", "eu"),
+		//				new Player ("Verdishamonk", "lightnings-blade", "eu"),
+		//				new Player ("Fraggoji", "lightnings-blade", "eu"),
+		//				new Player ("Seijta", "lightnings-blade", "eu")
+		//				));
+		//
+		//		playerList.put("Method", Arrays.asList(
+		//				new Player ("Sco", "twisting-nether", "eu"),
+		//				new Player ("Kreps", "twisting-nether", "eu"),
+		//				new Player ("Raziee", "twisting-nether", "eu"),
+		//				new Player ("Drquyn", "twisting-nether", "eu"),
+		//				new Player ("Perfecto", "twisting-nether", "eu"),
+		//				new Player ("Smootie", "twisting-nether", "eu"),
+		//				new Player ("Twold", "twisting-nether", "eu"),
+		//				new Player ("Rogerbrown", "twisting-nether", "eu"),
+		//				new Player ("Apko", "twisting-nether", "eu")
+		//				));
 
 		playerList.put("Blood Legion", Arrays.asList(
+				new Player ("Jacktronic", "illidan", "us"),
+				new Player ("Ahdehl", "illidan", "us"),
+				new Player ("Arold", "illidan", "us"),
+				new Player ("Hypnotized", "illidan", "us"),
+				new Player ("Brozooka", "illidan", "us"),
 				new Player ("Riggimon", "illidan", "us"),
 				new Player ("Zachlock", "illidan", "us"),
 				new Player ("Absalom", "illidan", "us"),
@@ -80,30 +85,30 @@ public class Check {
 				new Player ("Scholtes", "illidan", "us")
 				));
 
-				playerList.put("Exorsus", Arrays.asList(
-						new Player ("Домек", "ревущий-фьорд", "eu"),
-						new Player ("Моранах", "ревущий-фьорд", "eu"),
-						new Player ("Сэу", "ревущий-фьорд", "eu"),
-						new Player ("Штырьпожоще", "ревущий-фьорд", "eu"),
-						new Player ("Споз", "ревущий-фьорд", "eu"),
-						new Player ("Вейхем", "ревущий-фьорд", "eu"),
-						new Player ("Дейси", "ревущий-фьорд", "eu"),
-						new Player ("Ёмпос", "ревущий-фьорд", "eu"),
-						new Player ("Шаморан", "ревущий-фьорд", "eu"),
-						new Player ("Надоубивать", "ревущий-фьорд", "eu")
-						));
-		
-				playerList.put("Style War", Arrays.asList(
-						new Player ("西瓦修斯", "thousand-needles", "cn"),
-						new Player ("玖伍肆叁", "thousand-needles", "cn"),
-						new Player ("米米雕", "thousand-needles", "cn"),
-						new Player ("荣姣姣", "thousand-needles", "cn"),
-						new Player ("斯塔斯之猎", "thousand-needles", "cn"),
-						new Player ("劣质枪法", "thousand-needles", "cn"),
-						new Player ("汉宫易", "thousand-needles", "cn"),
-						new Player ("斷風賢", "thousand-needles", "cn"),
-						new Player ("偶吧欧巴", "thousand-needles", "cn")
-						));
+		//		playerList.put("Exorsus", Arrays.asList(
+		//				new Player ("Домек", "ревущий-фьорд", "eu"),
+		//				new Player ("Моранах", "ревущий-фьорд", "eu"),
+		//				new Player ("Сэу", "ревущий-фьорд", "eu"),
+		//				new Player ("Штырьпожоще", "ревущий-фьорд", "eu"),
+		//				new Player ("Споз", "ревущий-фьорд", "eu"),
+		//				new Player ("Вейхем", "ревущий-фьорд", "eu"),
+		//				new Player ("Дейси", "ревущий-фьорд", "eu"),
+		//				new Player ("Ёмпос", "ревущий-фьорд", "eu"),
+		//				new Player ("Шаморан", "ревущий-фьорд", "eu"),
+		//				new Player ("Надоубивать", "ревущий-фьорд", "eu")
+		//				));
+		//
+		//		playerList.put("Style War", Arrays.asList(
+		//				new Player ("西瓦修斯", "thousand-needles", "cn"),
+		//				new Player ("玖伍肆叁", "thousand-needles", "cn"),
+		//				new Player ("米米雕", "thousand-needles", "cn"),
+		//				new Player ("荣姣姣", "thousand-needles", "cn"),
+		//				new Player ("斯塔斯之猎", "thousand-needles", "cn"),
+		//				new Player ("劣质枪法", "thousand-needles", "cn"),
+		//				new Player ("汉宫易", "thousand-needles", "cn"),
+		//				new Player ("斷風賢", "thousand-needles", "cn"),
+		//				new Player ("偶吧欧巴", "thousand-needles", "cn")
+		//				));
 
 		playerList.put("Ascension", Arrays.asList(
 				new Player ("Kovak", "barthilas", "us"),
@@ -131,18 +136,18 @@ public class Check {
 				new Player ("Hesp", "sargeras", "us")
 				));
 
-				playerList.put("Ascendance", Arrays.asList(
-						new Player ("Sennari", "draenor", "eu"),
-						new Player ("Stash", "draenor", "eu"),
-						new Player ("Orby", "draenor", "eu"),
-						new Player ("Cherdin", "draenor", "eu"),
-						new Player ("Rammo", "draenor", "eu"),
-						new Player ("Eriya", "draenor", "eu"),
-						new Player ("Rammoz", "draenor", "eu"),
-						new Player ("Derwinn", "draenor", "eu"),
-						new Player ("Pipex", "draenor", "eu"),
-						new Player ("Camthalion", "draenor", "eu")
-						));
+		//		playerList.put("Ascendance", Arrays.asList(
+		//				new Player ("Sennari", "draenor", "eu"),
+		//				new Player ("Stash", "draenor", "eu"),
+		//				new Player ("Orby", "draenor", "eu"),
+		//				new Player ("Cherdin", "draenor", "eu"),
+		//				new Player ("Rammo", "draenor", "eu"),
+		//				new Player ("Eriya", "draenor", "eu"),
+		//				new Player ("Rammoz", "draenor", "eu"),
+		//				new Player ("Derwinn", "draenor", "eu"),
+		//				new Player ("Pipex", "draenor", "eu"),
+		//				new Player ("Camthalion", "draenor", "eu")
+		//				));
 	}
 
 	private List<PlayerAchievement> getPlayerAchievements(Player player) {
@@ -163,7 +168,7 @@ public class Check {
 						achievementId, 
 						response.getAchievements().getAchievementsCompletedTimestamp().get( response.getAchievements().getAchievementsCompleted().indexOf(achievementId))));
 			} catch (Exception e) {
-				e.printStackTrace();
+				logger.error("Error in finding achievement" + e.getMessage());
 			}
 		}
 
@@ -203,8 +208,7 @@ public class Check {
 						}	
 					}
 					catch (Exception e) {
-						logger.error("Error in loading player", e);
-						e.printStackTrace();
+						logger.error("Error in loading player" + e.getMessage());						
 					}
 				}
 			}
