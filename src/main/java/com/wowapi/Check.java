@@ -24,11 +24,11 @@ public class Check {
 	Map<String, List<Player>> playerList = new HashMap<>();
 	@SuppressWarnings("serial")
 	Map<Long, String> achievementList = new HashMap<Long, String>() {{
-		put(8966l, "Mythic: Gruul");
-		put(8967l, "Mythic: Oregorger");
-		put(8968l, "Mythic: Hans'gar and Franzok");
-		put(8956l, "Mythic: Beastlord Darmac");
-		put(8932l, "Mythic: Flamebender Ka'graz");	
+//		put(8966l, "Mythic: Gruul");
+//		put(8967l, "Mythic: Oregorger");
+//		put(8968l, "Mythic: Hans'gar and Franzok");
+//		put(8956l, "Mythic: Beastlord Darmac");
+//		put(8932l, "Mythic: Flamebender Ka'graz");	
 		put(8969l, "Mythic: Operator Thogar");
 		put(8970l, "Mythic: Blast Furnace");
 		put(8971l, "Mythic: Kromog");
@@ -43,8 +43,14 @@ public class Check {
 	public Check () {
 
 				playerList.put("Paragon", Arrays.asList(
-						new Player ("Verestrasz", "lightnings-blade", "eu"),
+						new Player ("Verestrasz", "lightnings-blade", "eu"),						
+						new Player ("Sejtor", "lightnings-blade", "eu"),
+						new Player ("Lunyy", "lightnings-blade", "eu"),						
+						new Player ("Lynmd", "lightnings-blade", "eu"),
+						new Player ("Nrn", "lightnings-blade", "eu"),
+						new Player ("Yliajo", "lightnings-blade", "eu"),						
 						new Player ("Lappe", "lightnings-blade", "eu"),
+						new Player ("Jhazrun", "lightnings-blade", "eu"),
 						new Player ("Alzu", "lightnings-blade", "eu"),
 						new Player ("Seita", "lightnings-blade", "eu"),
 						new Player ("Riksu", "lightnings-blade", "eu"),
@@ -114,77 +120,77 @@ public class Check {
 						new Player ("偶吧欧巴", "thousand-needles", "cn")
 						));
 				
-//				playerList.put("Blood Legion", Arrays.asList(
-//				new Player ("Xyronic", "illidan", "us"),
-//				new Player ("Slamino", "illidan", "us"),
-//				new Player ("Itharn", "illidan", "us"),
-//				new Player ("Zachx", "illidan", "us"),
-//				new Player ("Jacktronic", "illidan", "us"),
-//				new Player ("Monkfire", "illidan", "us"),
-//				new Player ("Ahdehl", "illidan", "us"),
-//				new Player ("Arold", "illidan", "us"),
-//				new Player ("Hypnotized", "illidan", "us"),
-//				new Player ("Brozooka", "illidan", "us"),
-//				new Player ("Riggimon", "illidan", "us"),
-//				new Player ("Zachlock", "illidan", "us"),
-//				new Player ("Absalom", "illidan", "us"),
-//				new Player ("Perran", "illidan", "us"),
-//				new Player ("Shuttletwo", "illidan", "us"),
-//				new Player ("Ahdehll", "illidan", "us"),
-//				new Player ("Kutaa", "illidan", "us"),
-//				new Player ("Madison", "illidan", "us"),
-//				new Player ("Riggatron", "illidan", "us"),				
-//				new Player ("Riggmonlee", "illidan", "us"),
-//				new Player ("Monkfire", "illidan", "us"),
-//				new Player ("Zoomkins", "illidan", "us"),
-//				new Player ("Scholtes", "illidan", "us")
-//				
-//				));				
+				playerList.put("Blood Legion", Arrays.asList(
+				new Player ("Xyronic", "illidan", "us"),
+				new Player ("Slamino", "illidan", "us"),
+				new Player ("Itharn", "illidan", "us"),
+				new Player ("Zachx", "illidan", "us"),
+				new Player ("Jacktronic", "illidan", "us"),
+				new Player ("Monkfire", "illidan", "us"),
+				new Player ("Ahdehl", "illidan", "us"),
+				new Player ("Arold", "illidan", "us"),
+				new Player ("Hypnotized", "illidan", "us"),
+				new Player ("Brozooka", "illidan", "us"),
+				new Player ("Riggimon", "illidan", "us"),
+				new Player ("Zachlock", "illidan", "us"),
+				new Player ("Absalom", "illidan", "us"),
+				new Player ("Perran", "illidan", "us"),
+				new Player ("Shuttletwo", "illidan", "us"),
+				new Player ("Ahdehll", "illidan", "us"),
+				new Player ("Kutaa", "illidan", "us"),
+				new Player ("Madison", "illidan", "us"),
+				new Player ("Riggatron", "illidan", "us"),				
+				new Player ("Riggmonlee", "illidan", "us"),
+				new Player ("Monkfire", "illidan", "us"),
+				new Player ("Zoomkins", "illidan", "us"),
+				new Player ("Scholtes", "illidan", "us")
+				
+				));				
 
-//		playerList.put("Ascension", Arrays.asList(				
-//				new Player ("Korvak", "barthilas", "us"),
-//				new Player ("Homodemon", "barthilas", "us"),
-//				new Player ("Akirawr", "barthilas", "us"),
-//				new Player ("Chuckles", "barthilas", "us"),
-//				new Player ("Hahnsel", "barthilas", "us"),
-//				new Player ("Hydro", "barthilas", "us"),
-//				new Player ("Ofnu", "barthilas", "us"),
-//				new Player ("Aokiie", "barthilas", "us"),
-//				new Player ("Xariaz", "barthilas", "us"),
-//				new Player ("Avath", "barthilas", "us"),
-//				new Player ("Pasteryy", "barthilas", "us"),
-//				new Player ("Marrsyy", "barthilas", "us")
-//				));
+		playerList.put("Ascension", Arrays.asList(				
+				new Player ("Korvak", "barthilas", "us"),
+				new Player ("Homodemon", "barthilas", "us"),
+				new Player ("Akirawr", "barthilas", "us"),
+				new Player ("Chuckles", "barthilas", "us"),
+				new Player ("Hahnsel", "barthilas", "us"),
+				new Player ("Hydro", "barthilas", "us"),
+				new Player ("Ofnu", "barthilas", "us"),
+				new Player ("Aokiie", "barthilas", "us"),
+				new Player ("Xariaz", "barthilas", "us"),
+				new Player ("Avath", "barthilas", "us"),
+				new Player ("Pasteryy", "barthilas", "us"),
+				new Player ("Marrsyy", "barthilas", "us")
+				));
 
-//		playerList.put("Midwinter", Arrays.asList(
-//				new Player ("Stenhaldi", "sargeras", "us"),
-//				new Player ("Kennyloggins", "sargeras", "us"),
-//				new Player ("Thebiggman", "sargeras", "us"),
-//				new Player ("Affinity", "sargeras", "us"),
-////				new Player ("Siory", "sargeras", "us"),	
-////				new Player ("Dashima", "sargeras", "us"),
-////				new Player ("Exoticflower", "sargeras", "us"),
-////				new Player ("Kevsenior", "sargeras", "us"),
-////				new Player ("Angz", "sargeras", "us"),
-//				new Player ("Vigilate", "sargeras", "us"),
-//				new Player ("Doxie", "sargeras", "us"),
-//				new Player ("Slootbag", "sargeras", "us"),
-//				new Player ("Jarinky", "sargeras", "us"),			
-//				new Player ("Hesp", "sargeras", "us")
-//				));
-//		
-//		playerList.put("Avast", Arrays.asList(
-//				new Player ("Boozeyo", "jubeithos", "us"),
-//				new Player ("Eroka", "jubeithos", "us"),
-//				new Player ("Qariaa", "jubeithos", "us"),
-//				new Player ("Alford", "jubeithos", "us"),
-//				new Player ("Slicewrists", "jubeithos", "us"),
-//				new Player ("Effectivedps", "jubeithos", "us"),
-//				new Player ("Winclonex", "jubeithos", "us"),
-//				new Player ("Palyo", "jubeithos", "us"),
-//				new Player ("Disagreeable", "jubeithos", "us"),
-//				new Player ("Crowded", "jubeithos", "us")
-//				));
+		playerList.put("Midwinter", Arrays.asList(
+				new Player ("Stenhaldi", "sargeras", "us"),
+				new Player ("Kennyloggins", "sargeras", "us"),
+				new Player ("Thebiggman", "sargeras", "us"),
+				new Player ("Affinity", "sargeras", "us"),
+//				new Player ("Siory", "sargeras", "us"),	
+//				new Player ("Dashima", "sargeras", "us"),
+//				new Player ("Exoticflower", "sargeras", "us"),
+//				new Player ("Kevsenior", "sargeras", "us"),
+//				new Player ("Angz", "sargeras", "us"),
+				new Player ("Vigilate", "sargeras", "us"),
+				new Player ("Doxie", "sargeras", "us"),
+				new Player ("Slootbag", "sargeras", "us"),
+				new Player ("Jarinky", "sargeras", "us"),			
+				new Player ("Hesp", "sargeras", "us")
+				));
+		
+		playerList.put("Avast", Arrays.asList(
+				new Player ("Boozeyo", "jubeithos", "us"),
+				new Player ("Eroka", "jubeithos", "us"),
+				new Player ("Qariaa", "jubeithos", "us"),
+				new Player ("Alford", "jubeithos", "us"),
+				new Player ("Slicewrists", "jubeithos", "us"),
+				new Player ("Effectivedps", "jubeithos", "us"),
+				new Player ("Winclonex", "jubeithos", "us"),
+				new Player ("Palyo", "jubeithos", "us"),
+				new Player ("Disagreeable", "jubeithos", "us"),
+				new Player ("Crowded", "jubeithos", "us")
+				));
 
 	}
 
