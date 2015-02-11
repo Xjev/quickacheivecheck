@@ -73,6 +73,9 @@ public class Check {
 						));
 
 				playerList.put("Exorsus", Arrays.asList(
+						new Player ("Радостьмоя", "ревущий-фьорд", "eu"),
+						new Player ("Бован", "ревущий-фьорд", "eu"),
+						new Player ("Лайнаквин", "ревущий-фьорд", "eu"),						
 						new Player ("Домек", "ревущий-фьорд", "eu"),
 						new Player ("Моранах", "ревущий-фьорд", "eu"),
 						new Player ("Сэу", "ревущий-фьорд", "eu"),
