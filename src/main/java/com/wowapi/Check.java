@@ -58,6 +58,10 @@ public class Check {
 		
 				playerList.put("Method", Arrays.asList(
 						new Player ("Sco", "twisting-nether", "eu"),
+						new Player ("Kuznam", "twisting-nether", "eu"),
+						new Player ("Pottm", "twisting-nether", "eu"),
+						new Player ("Lørgok", "twisting-nether", "eu"),
+						new Player ("Landqvist", "twisting-nether", "eu"),
 						new Player ("Kreps", "twisting-nether", "eu"),
 						new Player ("Raziee", "twisting-nether", "eu"),
 						new Player ("Drquyn", "twisting-nether", "eu"),
