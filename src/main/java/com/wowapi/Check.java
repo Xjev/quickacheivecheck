@@ -29,7 +29,7 @@ public class Check {
 //		put(8968l, "Mythic: Hans'gar and Franzok");
 //		put(8956l, "Mythic: Beastlord Darmac");
 //		put(8932l, "Mythic: Flamebender Ka'graz");	
-		put(8969l, "Mythic: Operator Thogar");
+//		put(8969l, "Mythic: Operator Thogar");
 		put(8970l, "Mythic: Blast Furnace");
 		put(8971l, "Mythic: Kromog");
 		put(8972l, "Mythic: Iron Maidens");
@@ -78,6 +78,9 @@ public class Check {
 				));
 
 		playerList.put("Exorsus", Arrays.asList(
+				new Player ("Аффиа", "ревущий-фьорд", "eu"),
+				new Player ("Аллухх", "ревущий-фьорд", "eu"),
+				new Player ("Нейкист", "ревущий-фьорд", "eu"),
 				new Player ("Радостьмоя", "ревущий-фьорд", "eu"),
 				new Player ("Бован", "ревущий-фьорд", "eu"),
 				new Player ("Лайнаквин", "ревущий-фьорд", "eu"),						
@@ -94,37 +97,48 @@ public class Check {
 				new Player ("Надоубивать", "ревущий-фьорд", "eu")
 				));	
 
-		playerList.put("Ascendance", Arrays.asList(
-				new Player ("Sennari", "draenor", "eu"),
-				new Player ("Stash", "draenor", "eu"),
-				new Player ("Orby", "draenor", "eu"),
-				new Player ("Cherdin", "draenor", "eu"),
-				new Player ("Rammo", "draenor", "eu"),
-				new Player ("Eriya", "draenor", "eu"),
-				new Player ("Rammoz", "draenor", "eu"),
-				new Player ("Derwinn", "draenor", "eu"),
-				new Player ("Pipex", "draenor", "eu"),
-				new Player ("Camthalion", "draenor", "eu")
-				));
+//		playerList.put("Ascendance", Arrays.asList(
+//				new Player ("Sennari", "draenor", "eu"),
+//				new Player ("Stash", "draenor", "eu"),
+//				new Player ("Orby", "draenor", "eu"),
+//				new Player ("Cherdin", "draenor", "eu"),
+//				new Player ("Rammo", "draenor", "eu"),
+//				new Player ("Eriya", "draenor", "eu"),
+//				new Player ("Rammoz", "draenor", "eu"),
+//				new Player ("Derwinn", "draenor", "eu"),
+//				new Player ("Pipex", "draenor", "eu"),
+//				new Player ("Camthalion", "draenor", "eu")
+//				));
 		
-		playerList.put("Envy", Arrays.asList(
-				new Player ("Aflaka", "kazzak", "eu"),
-				new Player ("Lyddmong", "kazzak", "eu"),
-				new Player ("Ashthereal", "kazzak", "eu"),
-				new Player ("Dex", "kazzak", "eu"),
-				new Player ("Atimontaná", "kazzak", "eu"),
-				new Player ("Nagura", "kazzak", "eu"),
-				new Player ("Zio", "kazzak", "eu"),
-				new Player ("Chrisbabe", "kazzak", "eu"),
-				new Player ("Kraftful", "kazzak", "eu")
+//		playerList.put("Envy", Arrays.asList(
+//				new Player ("Aflaka", "kazzak", "eu"),
+//				new Player ("Lyddmong", "kazzak", "eu"),
+//				new Player ("Ashthereal", "kazzak", "eu"),
+//				new Player ("Dex", "kazzak", "eu"),
+//				new Player ("Atimontaná", "kazzak", "eu"),
+//				new Player ("Nagura", "kazzak", "eu"),
+//				new Player ("Zio", "kazzak", "eu"),
+//				new Player ("Chrisbabe", "kazzak", "eu"),
+//				new Player ("Kraftful", "kazzak", "eu")
+//				));
+		
+		playerList.put("From Scratch", Arrays.asList(
+				new Player ("Uto", "sargeras", "eu"),
+				new Player ("Bôtis", "sargeras", "eu"),
+				new Player ("Tchïn", "sargeras", "eu"),
+				new Player ("Miíd", "sargeras", "eu"),
+				new Player ("Teebo", "sargeras", "eu"),
+				new Player ("Reyâ", "sargeras", "eu"),
+				new Player ("Eywing", "sargeras", "eu"),
+				new Player ("Varskar", "sargeras", "eu"),
+				new Player ("Babàyo", "sargeras", "eu"),
+				new Player ("Søulja", "sargeras", "eu")
 				));
 
 		playerList.put("Style War", Arrays.asList(
 				new Player ("斷風賢", "千针石林", "cn"),
 				new Player ("小淘气丫丫", "千针石林", "cn"),
 				new Player ("死骑京京", "千针石林", "cn"),
-				new Player ("贼汉三 获得", "千针石林", "cn"),
-				new Player ("余大儒 获得", "千针石林", "cn"),
 				new Player ("Miatre", "千针石林", "cn"),
 				new Player ("Oli", "千针石林", "cn"),
 				new Player ("Hydrà", "千针石林", "cn"),
@@ -210,7 +224,6 @@ public class Check {
 				new Player ("Effectivedps", "jubeithos", "us"),
 				new Player ("Winclonex", "jubeithos", "us"),
 				new Player ("Palyo", "jubeithos", "us"),
-				new Player ("Disagreeable", "jubeithos", "us"),
 				new Player ("Crowded", "jubeithos", "us")
 				));
 		
@@ -222,8 +235,6 @@ public class Check {
 				new Player ("Nalp", "mugthol", "us"),
 				new Player ("Neckfat", "mugthol", "us"),
 				new Player ("Zevoa", "mugthol", "us"),
-				new Player ("Juicebox", "mugthol", "us"),
-				new Player ("Disagreeable", "mugthol", "us"),
 				new Player ("Juicebox", "mugthol", "us")
 				));
 
@@ -273,6 +284,7 @@ public class Check {
 			System.out.println("");
 			for (String guildName: playerList.keySet()) {
 				Set<Long> alreadyFoundAchives = new HashSet<>();
+				List<PlayerAchievement> timestamps = new ArrayList<>();
 				for (Player player: playerList.get(guildName)) {
 					try {
 						List<PlayerAchievement> achives = getPlayerAchievements(player);				
@@ -287,13 +299,17 @@ public class Check {
 												a.getUTCtime(),
 												player)); 
 										alreadyFoundAchives.add(bossId);
+										timestamps.add(a);
 									}											
 									);
 						}	
 					} catch (Exception e) {
 						logger.error("Error in loading player: " + player + "; " + e.getMessage());						
 					}
-				}
+				}				
+				System.out.println(guildName + ": " + timestamps.size());
+				timestamps.sort((p1, p2) -> p1.getTimestamp().compareTo(p2.getTimestamp()));
+				timestamps.forEach(a -> System.out.println(a.getUTCtime() + " : " + achievementList.get(a.getAchievementId()).substring(8)));
 			}
 			try {
 				logger.info("Sleeping...");
