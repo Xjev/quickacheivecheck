@@ -1,5 +1,7 @@
 package com.wowapi;
 
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -24,12 +26,12 @@ public class Check {
 	Map<String, List<Player>> playerList = new HashMap<>();
 	@SuppressWarnings("serial")
 	Map<Long, String> achievementList = new HashMap<Long, String>() {{
-//		put(8966l, "Mythic: Gruul");
-//		put(8967l, "Mythic: Oregorger");
-//		put(8968l, "Mythic: Hans'gar and Franzok");
-//		put(8956l, "Mythic: Beastlord Darmac");
-//		put(8932l, "Mythic: Flamebender Ka'graz");	
-//		put(8969l, "Mythic: Operator Thogar");
+		put(8966l, "Mythic: Gruul");
+		put(8967l, "Mythic: Oregorger");
+		put(8968l, "Mythic: Hans'gar and Franzok");
+		put(8956l, "Mythic: Beastlord Darmac");
+		put(8932l, "Mythic: Flamebender Ka'graz");	
+		put(8969l, "Mythic: Operator Thogar");
 		put(8970l, "Mythic: Blast Furnace");
 		put(8971l, "Mythic: Kromog");
 		put(8972l, "Mythic: Iron Maidens");
@@ -310,6 +312,7 @@ public class Check {
 				System.out.println(guildName + ": " + timestamps.size());
 				timestamps.sort((p1, p2) -> p1.getTimestamp().compareTo(p2.getTimestamp()));
 				timestamps.forEach(a -> System.out.println(a.getUTCtime() + " : " + achievementList.get(a.getAchievementId()).substring(8)));
+				reportTimeGaps(timestamps);
 			}
 			try {
 				logger.info("Sleeping...");
@@ -319,5 +322,41 @@ public class Check {
 			}		
 		}
 	}
+
+	private void reportTimeGaps(List<PlayerAchievement> timestamps) {
+		System.out.println("Duration since first: ");
+		for (PlayerAchievement a: timestamps) {
+			if (timestamps.indexOf(a) == 0) continue;
+			Duration duration = Duration.of(a.getTimestamp() - timestamps.get(0).getTimestamp(), ChronoUnit.MILLIS);						
+			System.out.println(secondsToShortDHMS(duration.getSeconds()));			
+		}	
+		System.out.println("Duration since last: ");
+		for (PlayerAchievement a: timestamps) {
+			if (timestamps.indexOf(a) == 0) continue;
+			Duration duration = Duration.of(a.getTimestamp() - timestamps.get(timestamps.indexOf(a)-1).getTimestamp(), ChronoUnit.MILLIS);						
+			System.out.println(secondsToShortDHMS(duration.getSeconds()));			
+		}			
+	}
+	
+	public String secondsToShortDHMS(long duration) {		
+		long ONE_SECOND = 1;
+		long SECONDS = 60;
+		long MINUTES = 60;
+		long HOURS = 24;
+		
+	    String res = "";
+	    duration /= ONE_SECOND;
+	    duration /= SECONDS;
+	    int minutes = (int) (duration % MINUTES);
+	    duration /= MINUTES;
+	    int hours = (int) (duration % HOURS);
+	    int days = (int) (duration / HOURS);
+	    if (days == 0) {
+	      res = String.format("%dh %dm", hours, minutes);
+	    } else {
+	      res = String.format("%dd %dh %dm", days, hours, minutes);
+	    }
+	    return res;
+	  }
 
 }
