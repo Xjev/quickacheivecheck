@@ -138,6 +138,16 @@ public class Check {
 				));
 
 		playerList.put("Style War", Arrays.asList(
+				new Player ("静丶儿", "maelstrom", "cn"),
+				new Player ("Prodru", "maelstrom", "cn"),
+				new Player ("清水玉溪", "maelstrom", "cn"),
+				new Player ("小丶静", "maelstrom", "cn"),
+				new Player ("Foxmagic", "maelstrom", "cn"),
+				new Player ("Foxmagiic", "maelstrom", "cn"),
+				new Player ("迷糊小蛮", "maelstrom", "cn"),
+				));
+		
+		playerList.put("Stars", Arrays.asList(
 				new Player ("斷風賢", "千针石林", "cn"),
 				new Player ("小淘气丫丫", "千针石林", "cn"),
 				new Player ("死骑京京", "千针石林", "cn"),
