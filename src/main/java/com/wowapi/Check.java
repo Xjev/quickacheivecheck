@@ -26,16 +26,27 @@ public class Check {
 	Map<String, List<Player>> playerList = new HashMap<>();
 	@SuppressWarnings("serial")
 	Map<Long, String> achievementList = new HashMap<Long, String>() {{
-		put(8966l, "Mythic: Gruul");
-		put(8967l, "Mythic: Oregorger");
-		put(8968l, "Mythic: Hans'gar and Franzok");
-		put(8956l, "Mythic: Beastlord Darmac");
-		put(8932l, "Mythic: Flamebender Ka'graz");	
-		put(8969l, "Mythic: Operator Thogar");
-		put(8970l, "Mythic: Blast Furnace");
-		put(8971l, "Mythic: Kromog");
-		put(8972l, "Mythic: Iron Maidens");
-		put(8973l, "Mythic: Blackhand's Crucible");
+//		put(8966l, "Mythic: Gruul");
+//		put(8967l, "Mythic: Oregorger");
+//		put(8968l, "Mythic: Hans'gar and Franzok");
+//		put(8956l, "Mythic: Beastlord Darmac");
+//		put(8932l, "Mythic: Flamebender Ka'graz");	
+//		put(8969l, "Mythic: Operator Thogar");
+//		put(8970l, "Mythic: Blast Furnace");
+//		put(8971l, "Mythic: Kromog");
+//		put(8972l, "Mythic: Iron Maidens");
+//		put(8973l, "Mythic: Blackhand's Crucible");
+		
+		put(10027l, "Mythic: Mythic: Hellfire Assault");
+		put(10032l, "Mythic: Iron Reaver");
+		put(10033l, "Mythic: Kormrok");
+		put(10034l, "Mythic: Hellfire High Council");
+		put(10035l, "Mythic: Kilrogg Deadeye");	
+		put(10253l, "Mythic: Gorefiend");
+		put(10040l, "Mythic: Socrethar the Eternal");
+		put(10038l, "Mythic: Fel Lord Zakuun");
+		put(10037l, "Mythic: Shadow-Lord Iskar");
+		put(10041l, "Mythic: Tyrant Velhari");
 
 
 		//test
@@ -99,30 +110,30 @@ public class Check {
 				new Player ("Надоубивать", "ревущий-фьорд", "eu")
 				));	
 
-//		playerList.put("Ascendance", Arrays.asList(
-//				new Player ("Sennari", "draenor", "eu"),
-//				new Player ("Stash", "draenor", "eu"),
-//				new Player ("Orby", "draenor", "eu"),
-//				new Player ("Cherdin", "draenor", "eu"),
-//				new Player ("Rammo", "draenor", "eu"),
-//				new Player ("Eriya", "draenor", "eu"),
-//				new Player ("Rammoz", "draenor", "eu"),
-//				new Player ("Derwinn", "draenor", "eu"),
-//				new Player ("Pipex", "draenor", "eu"),
-//				new Player ("Camthalion", "draenor", "eu")
-//				));
+		playerList.put("Ascendance", Arrays.asList(
+				new Player ("Sennari", "draenor", "eu"),
+				new Player ("Stash", "draenor", "eu"),
+				new Player ("Orby", "draenor", "eu"),
+				new Player ("Cherdin", "draenor", "eu"),
+				new Player ("Rammo", "draenor", "eu"),
+				new Player ("Eriya", "draenor", "eu"),
+				new Player ("Rammoz", "draenor", "eu"),
+				new Player ("Derwinn", "draenor", "eu"),
+				new Player ("Pipex", "draenor", "eu"),
+				new Player ("Camthalion", "draenor", "eu")
+				));
 		
-//		playerList.put("Envy", Arrays.asList(
-//				new Player ("Aflaka", "kazzak", "eu"),
-//				new Player ("Lyddmong", "kazzak", "eu"),
-//				new Player ("Ashthereal", "kazzak", "eu"),
-//				new Player ("Dex", "kazzak", "eu"),
-//				new Player ("Atimontaná", "kazzak", "eu"),
-//				new Player ("Nagura", "kazzak", "eu"),
-//				new Player ("Zio", "kazzak", "eu"),
-//				new Player ("Chrisbabe", "kazzak", "eu"),
-//				new Player ("Kraftful", "kazzak", "eu")
-//				));
+		playerList.put("Envy", Arrays.asList(
+				new Player ("Aflaka", "kazzak", "eu"),
+				new Player ("Lyddmong", "kazzak", "eu"),
+				new Player ("Ashthereal", "kazzak", "eu"),
+				new Player ("Dex", "kazzak", "eu"),
+				new Player ("Atimontaná", "kazzak", "eu"),
+				new Player ("Nagura", "kazzak", "eu"),
+				new Player ("Zio", "kazzak", "eu"),
+				new Player ("Chrisbabe", "kazzak", "eu"),
+				new Player ("Kraftful", "kazzak", "eu")
+				));
 		
 		playerList.put("From Scratch", Arrays.asList(
 				new Player ("Uto", "sargeras", "eu"),
@@ -137,36 +148,36 @@ public class Check {
 				new Player ("Søulja", "sargeras", "eu")
 				));
 
-		playerList.put("Style War", Arrays.asList(
-				new Player ("静丶儿", "maelstrom", "cn"),
-				new Player ("Prodru", "maelstrom", "cn"),
-				new Player ("清水玉溪", "maelstrom", "cn"),
-				new Player ("小丶静", "maelstrom", "cn"),
-				new Player ("Foxmagic", "maelstrom", "cn"),
-				new Player ("Foxmagiic", "maelstrom", "cn"),
-				new Player ("迷糊小蛮", "maelstrom", "cn"),
-				));
+//		playerList.put("Style War", Arrays.asList(
+//				new Player ("静丶儿", "maelstrom", "cn"),
+//				new Player ("Prodru", "maelstrom", "cn"),
+//				new Player ("清水玉溪", "maelstrom", "cn"),
+//				new Player ("小丶静", "maelstrom", "cn"),
+//				new Player ("Foxmagic", "maelstrom", "cn"),
+//				new Player ("Foxmagiic", "maelstrom", "cn"),
+//				new Player ("迷糊小蛮", "maelstrom", "cn")
+//				));
 		
-		playerList.put("Stars", Arrays.asList(
-				new Player ("斷風賢", "千针石林", "cn"),
-				new Player ("小淘气丫丫", "千针石林", "cn"),
-				new Player ("死骑京京", "千针石林", "cn"),
-				new Player ("Miatre", "千针石林", "cn"),
-				new Player ("Oli", "千针石林", "cn"),
-				new Player ("Hydrà", "千针石林", "cn"),
-				new Player ("断风一航", "千针石林", "cn"),
-				new Player ("斷風賢", "千针石林", "cn"),
-				new Player ("西瓦修斯", "千针石林", "cn"),
-				new Player ("玖伍肆叁", "千针石林", "cn"),
-				new Player ("米米雕", "千针石林", "cn"),
-				new Player ("荣姣姣", "千针石林", "cn"),
-				new Player ("斯塔斯之猎", "千针石林", "cn"),
-				new Player ("汉宫易", "千针石林", "cn"),
-				new Player ("斷風賢", "千针石林", "cn"),
-				new Player ("偶吧欧巴", "千针石林", "cn"),
-				new Player ("砍死咆哮", "千针石林", "cn"),
-				new Player ("我爱小叮当", "thousand-needles", "cn")
-				));
+//		playerList.put("Stars", Arrays.asList(
+//				new Player ("斷風賢", "千针石林", "cn"),
+//				new Player ("小淘气丫丫", "千针石林", "cn"),
+//				new Player ("死骑京京", "千针石林", "cn"),
+//				new Player ("Miatre", "千针石林", "cn"),
+//				new Player ("Oli", "千针石林", "cn"),
+//				new Player ("Hydrà", "千针石林", "cn"),
+//				new Player ("断风一航", "千针石林", "cn"),
+//				new Player ("斷風賢", "千针石林", "cn"),
+//				new Player ("西瓦修斯", "千针石林", "cn"),
+//				new Player ("玖伍肆叁", "千针石林", "cn"),
+//				new Player ("米米雕", "千针石林", "cn"),
+//				new Player ("荣姣姣", "千针石林", "cn"),
+//				new Player ("斯塔斯之猎", "千针石林", "cn"),
+//				new Player ("汉宫易", "千针石林", "cn"),
+//				new Player ("斷風賢", "千针石林", "cn"),
+//				new Player ("偶吧欧巴", "千针石林", "cn"),
+//				new Player ("砍死咆哮", "千针石林", "cn"),
+//				new Player ("我爱小叮当", "thousand-needles", "cn")
+//				));
 
 		playerList.put("Blood Legion", Arrays.asList(
 				new Player ("Xyronic", "illidan", "us"),
